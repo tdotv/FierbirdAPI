@@ -38,7 +38,7 @@ options.UseFirebird("database=localhost:TESTDB.FDB;user=SYSDBA;password=sysdba"
 
 ## Swagger
 ```bash
-    http://localhost:5000/api/docs/index.html
+http://localhost:5000/api/docs/index.html
 ```
 
 ## Запуск
