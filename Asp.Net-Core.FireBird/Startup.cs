@@ -29,11 +29,11 @@ namespace FireBird.API
 
 			services.AddDbContext<DataContext>(options =>
 			{
-				options.UseFirebird("database=localhost:test.fdb;user=sysdba;password=numsei",
+				options.UseFirebird("database=localhost:TESTDB.FDB;user=SYSDBA;password=sysdba",
 				optionsBuilder => optionsBuilder.MigrationsAssembly(typeof(DataContext).Assembly.FullName));
-			});
+			}); // CONNECT "D:\MyDev\DBs\TESTDB.FDB" user "SYSDBA" password "sysdba";
 
-			services.AddSwaggerGen(setup =>
+            services.AddSwaggerGen(setup =>
 			{
 				setup.SwaggerDoc("v1", new OpenApiInfo
 				{
